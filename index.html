@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img src="./img/maxresdefault.jpg" alt="introduction" style=" margin: 0 auto 4rem auto; background: red;" class="demo-logo">
+				</section>
+
+				<section	data-background-iframe="https://en.wikipedia.org/wiki/CSS_grid_layout" data-background-interactive>
+				</section>
+				
+				<section data-background-iframe="https://caniuse.com/?search=CSS%20Grid%20Layout" data-background-interactive>
+				</section>
+
+				<section>
+					<h3>Flex versus Grid</h3>
+					<img src="./img/4.png" alt="introduction" style=" margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				</section>
+
+				<section>
+					<h3>Grid container </h3>
+					<img src="./img/grid-container.jpg" alt="introduction" style=" margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				</section>
+
+				<section>
+					<h3>Grid items  </h3>
+					<img src="./img/grid items.jpg" alt="introduction" style=" margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				</section>
+				<section>
+					<h3>Grid lines  </h3>
+					<img src="./img/grid lines.jpg" alt="introduction" style=" margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				</section>
+
+				<section>
+					<h3>Grid track  </h3>
+					<img src="./img/grid track.jpg" alt="introduction" style=" margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				</section>
+
+				<section>
+					<h3>Grid cell  </h3>
+					<img src="./img/grid cell.jpg" alt="introduction" style=" margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				</section>
+
+				<section>
+					<h3>Grid area  </h3>
+					<img src="./img/grid area.jpg" alt="introduction" style=" margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				</section>
+
+				
+					<section id="fragments">
+						<h3>First you need:</h3>
+						<ul>
+						<li class="fragment">define a grid container by adding a display property to it with a grid value;</li>
+						<li class="fragment">set the sizes of rows and columns using the grid-template-rows and grid-template-columns properties;</li>
+						<li class="fragment">put children in the grid using the grid-row and grid-column properties.</li>
+						</ul>
+					</section>
+
+					<section id="fragments">
+						<h3>repeat() and  minmax ():</h3>
+						<p class="fragment"> <span class="myStyle">Without repeat():</span> grid-template-columns: 8em 8em 8em; </p>
+						<p class="fragment">  <span class="myStyle">With repeat():</span> grid-template-columns: repeat(3, 8em); </p>
+						<p class="fragment">  <span class="myStyle">minmax(): minmax(200px, 1fr)</span></p>
+
+					</section>
+
+					<section>
+						<h3>Popular Grid sites </h3>
+						<img src="./img/ikea.jpeg" alt="introduction" style=" margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+						<img src="./img/Evronews.jpg" alt="introduction" style=" margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</section>
+
+					
+					<section data-background-iframe="https://cssgridgarden.com/" data-background-interactive>
+					</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
